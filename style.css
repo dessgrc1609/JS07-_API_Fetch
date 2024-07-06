@@ -1,0 +1,29 @@
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid rgb(126, 0, 128);
+    width: 120px;
+    height: 120px;
+    animation: spin 0.8s linear infinite;
+    margin: 20px auto;
+    position: fixed; /* Se enfoca en posicionar y enfocarse en un elemento en el contenido*/
+    top: 50%; /* Posiciona el elemenento en el centro vertical deseado */
+    left: 50%; 
+    transform: translate(-50%, -50%); /* Centra la posición vertical como horizontalmente en el contenedor */
+    z-index: 1000; /* asigna y asegura el valor apilado del contenido */
+    border-radius: 5px;
+  }
+  
+  /* Animación de giro */
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  /* Estilo que se ocupó para la imagen del avatar */
+  .avatar-img {
+    width: 50px;
+    height: auto;
+   border-radius: 50%;
+  }
